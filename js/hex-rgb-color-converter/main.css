@@ -1,0 +1,28 @@
+#body{
+    height:100vh;
+    background-color:#fafafa;
+}
+
+#rgb-to-hex-input{
+    display:none;
+}
+
+#hex-to-rgb-input{
+   display:none;
+}
+
+.rgb-input-field,
+#hex-input,
+#conversion-selector{
+    max-width:66%;
+}
+
+.input-area{
+    background-color:#fafafa;
+}
+
+#reload {
+    display:none;
+}
+
+

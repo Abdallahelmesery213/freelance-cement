@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>RGB/HEX Color Value Converter Example</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/minty/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  <body id="body">
+    <h1 class="display-5 text-center mx-2 my-3 pt-5">RGB/HEX Color Value Converter Example</h1>
+<div id="carbon-block" align="center"></div>
+<div align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <div class="container-fluid h-100">
+        <div class="row h-50" id="choose-conversion">
+            <div class="form-group col-md-6 mx-auto text-center align-self-center">
+                <h3 class="text-center"><label for="conversion">Select Conversion</label></h3>
+                <select class="form-control mx-auto my-4" id="conversion-selector">
+                    <option value="selected" selected>Choose your conversion</option>
+                    <option value="rgb-to-hex">RGB to HEX</option>
+                    <option value="hex-to-rgb">HEX to RGB</option>
+                </select>
+                <button type="button" id="conversion-chosen" class="btn btn-primary mx-auto my-2">Select</button>
+            </div>
+        </div>
+
+        <!--Convert RGB to HEX-->
+        <div class="row h-50" id="rgb-to-hex-input" >
+            <div class="form-group col-md-6 text-center mx-auto py-3 align-self-center input-area">
+                <h4 class="text-center"><label for="rgb-value">Enter RGB Value</label></h4>
+                <div class=" my-4 mx-auto">
+                    <input type="number" id="red-input" class="form-control my-3 mx-auto rgb-input-field text-center" placeholder="Red Value" value="">
+                    <input type="number" id="green-input" class="form-control my-3 mx-auto rgb-input-field text-center" placeholder="Green Value" value="">
+                    <input type="number" id="blue-input" class="form-control my-3 mx-auto rgb-input-field text-center" placeholder="Blue Value" value="">
+                </div>
+                <button type="button" id="convert-hex-btn" class="btn btn-primary mx-auto">Convert</button>
+                <h4 class="text-center my-4">Hex Value</h4>
+                <h4 id="hex-value-result" class="text-center my-3">&nbsp;</h4>
+
+            </div>
+        </div>
+
+        <!--Convert from HEX to RGB-->
+        <div class="row h-50" id="hex-to-rgb-input">
+            <div class="form-group col-md-6 text-center mx-auto py-3 align-self-center input-area">
+                <h4 class="text-center"><label for="hex-value">Enter HEX Value</label></h4>
+                <input type="input" id="hex-input" class="form-control mx-auto my-4" value="#">
+                <button type="button" id="convert-rgb-btn" class="btn btn-primary mx-auto">Convert</button>
+                <h4 class="text-center my-4">RGB Value</h4>
+                <h4 id="rgb-value-result" class="text-center my-3">&nbsp;</h4>
+            </div>
+        </div>
+        <!--Reload button-->
+        <div id="reload" class="row mx-auto my-5 text-center">
+            <button type="button" id="reload-btn" class="btn btn-primary mt-5 mx-auto">Reset</button>
+        </div>
+    </div>
+
+    <!--JavaScript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

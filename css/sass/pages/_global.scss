@@ -1,0 +1,113 @@
+// high periority
+html{
+    scroll-behavior: smooth;
+    body{
+        background-color: $bodyBackground;
+        a{
+            color: initial;
+            text-decoration: none;
+            &:hover{
+                color: inherit;
+            }
+        }
+        .main-color{
+            color:$mainColor
+        }
+        @media screen and (max-width:$tablet){
+            .hideOnMobile{
+                display: none;
+            }
+            .order-mob-1{
+                order: 1;
+            }
+            .order-mob-2{
+                order: 2;
+            }
+        }
+
+    }
+}
+// low periority 
+.main-btn{
+    padding: 8px 15px;
+    background-color: $mainColor;
+    color: #fff;
+    border-radius: 5px;
+}
+.about-us , .selectRoom , .selectRoomColor{
+    .select-group{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        select{
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 25px;
+            background-color:#EFEFEF ;
+            color: $borderColor;
+        }
+        a{
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: none;
+            background-color: $mainColor;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid $mainColor;
+            line-height: 40px;
+        }
+        @media screen and (max-width:$tablet){
+            width: 90%;
+        }
+        @media screen and (max-width:$phone){
+            select{
+                padding: 8px 15px;
+            }
+            a{
+                top: 6px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.selectRoom , .colorView , .selectRoomColor{
+    .mainBox{
+        border: 2px solid #fff;
+        height: 79%;
+        border-radius: 5px;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .stmntBox{
+            border: 2px solid #fff;
+            width: 50%;
+            height: 30%;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            font-size: 30px;
+            font-weight: 400;
+        }
+        span{
+            margin: 5px 0;
+            font-weight: 400;
+        }
+        .main-btn{
+            padding: 8px 34px;
+        }
+        @media screen and (max-width:$tablet){
+            width: 90%;
+            margin: auto;
+            height: 300px;
+        }
+    }
+}

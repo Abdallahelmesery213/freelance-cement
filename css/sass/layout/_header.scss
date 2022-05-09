@@ -1,0 +1,107 @@
+header{
+    height: 100vh;
+    position: relative;
+    video{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-size: cover;
+    }
+    .container{
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        nav{
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            z-index: 999;
+            .logo{
+                display: flex;
+                align-items: flex-start;
+                h4{
+                    color: $mainColor;
+                    font-weight: 400;
+                }
+            }
+        }
+        .headerContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: #fff;
+            h2{
+                font-weight: 100;
+                font-size: 45px;
+            }
+            .links{
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                a{
+                    color: #fff;
+                }
+                @media screen and (max-width:$laptop) {
+                    width: 55%;
+                }
+                @media screen and (max-width:$tablet) {
+                    width: 85%;
+                }
+            }
+        }
+        
+    }
+    .scroll-down{
+        height: 50px;
+        width: 30px;
+        border: 2px solid #fff;
+        position: absolute;
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        &::before , &::after{
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            border: 2px solid #fff;
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            transform: translate(-50% , -100%) rotate(45deg);
+            border-top: transparent;
+            border-left: transparent;
+            animation: scroll-down 1s ease-in-out infinite;
+        }
+        &::after{
+            top: 30%;
+            animation-delay: .3s;
+        }
+        @keyframes scroll-down {
+            0%{
+                opacity: 0;
+            }
+            30%{
+                opacity: 1;
+            }
+            60%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+                top: 90%;
+            }
+        }
+    }
+
+
+}

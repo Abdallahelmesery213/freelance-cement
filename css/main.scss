@@ -1,0 +1,16 @@
+//helpers
+@import "Sass/helpers/variables";
+@import "Sass/helpers/mixins";
+//layout
+@import "sass/layout/global";
+@import "Sass/layout/navbar";
+@import "Sass/layout/header";
+@import "sass/layout/footer";
+//pages
+@import "sass/pages/global";
+@import "sass/pages/main";
+@import "sass/pages/indoorColos";
+
+//components
+@import "Sass/components/buttons";
+@import "Sass/components/headings";

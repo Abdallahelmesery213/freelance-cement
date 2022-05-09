@@ -1,0 +1,41 @@
+.about-us{
+    text-align: center;
+    .container{
+        background-color: #fff;
+        h2{
+            padding-top: 20px;
+            font-weight: $weightValue;
+        }
+        p{
+            width: 50%;
+            margin: auto;
+            @media screen and (max-width:$tablet) {
+                width: 100%;
+            }
+        }
+        .chooseHere{
+            margin: 20px 50px;
+            margin-bottom: 0;
+            h3{
+                font-weight: $weightValue;
+               
+            }
+            .row{
+                align-items: center;
+                .cHcontent{
+                    a{
+                        display: inline-block;
+                        margin-top: 10px;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+                img{
+                    filter: drop-shadow(18px 14px 14px #838789);
+                }
+            }
+        }
+    }
+
+}
