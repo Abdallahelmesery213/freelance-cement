@@ -2508,6 +2508,33 @@ select  option{
   line-height: 34px;
   color: #2E2E2D;
 }
+.wallet-module .wallet-module-header .visa-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.wallet-module .wallet-module-header .visa-card .overlay-card{
+  position: absolute;
+  /* opacity: .7; */
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  bottom: 0px;
+  z-index: 10;
+  border-radius: 0 0 10px 10px;
+  background-image: linear-gradient(to right, #FF5331, #FD8F06 );
+  color: #fff;
+}
+.wallet-module .wallet-module-header .visa-card .overlay-card h5{
+  font-size: 18px;
+  line-height:33px;
+  font-weight: normal;
+}
+.wallet-module .wallet-module-header .visa-card .overlay-card h4{
+  font-size: 32px;
+  font-weight: normal;
+}
 @media only screen and (max-width: 768px) {
   .wallet-module .add-account{
     margin-top: 15;
@@ -2525,6 +2552,15 @@ select  option{
   }
 }
 @media only screen and (max-width: 600px){
+  .wallet-module .wallet-module-header .visa-card .overlay-card{
+    height: 100%;
+    bottom: -86px;
+  }
+  .wallet-module .wallet-module-header .visa-card .overlay-card h4,
+  .wallet-module .wallet-module-header .visa-card .overlay-card h5
+  {
+    font-size: 12px;
+  }
   .wallet-module .wallet-module-header{
     height: 65px;
     display: flex;
@@ -2559,7 +2595,7 @@ select  option{
     margin-top: 6px;
   }
   .wallet-module .accounts .card{
-    height: 51px;
+    max-height: 68px;
     margin-bottom: 10px;
   }
   .wallet-module .accounts .card .header{
@@ -2631,6 +2667,33 @@ select  option{
     font-size: 7px;
     line-height: 20px;
     margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 425px){
+  .wallet-module .wallet-module-header .visa-card .overlay-card{
+    min-height: 85px;
+  }
+  .wallet-module .wallet-module-header .visa-card .overlay-card h4,
+  .wallet-module .wallet-module-header .visa-card .overlay-card h5
+  {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 375px){
+  .wallet-module .wallet-module-header .visa-card .overlay-card{
+    min-height: 100px;
+  }
+  .wallet-module .wallet-module-header .visa-card .overlay-card h4,
+  .wallet-module .wallet-module-header .visa-card .overlay-card h5
+  {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 320px){
+  .wallet-module .wallet-module-header .visa-card .overlay-card h4,
+  .wallet-module .wallet-module-header .visa-card .overlay-card h5
+  {
+    font-size: 6px;
   }
 }
 /* end  wallet module page */
