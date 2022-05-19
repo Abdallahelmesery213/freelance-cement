@@ -2788,3 +2788,81 @@ select  option{
 }
 /* end wallet module 2 page */
 
+/* start order-details-module page */
+.order-details-module .orders-list {
+  display: flex;
+  align-items: center;
+}
+.order-details-module .orders-list .list-remove span{
+  color: #5A646E;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.order-details-module .orders-list hr{
+  background-color: #595F6F;
+}
+.order-details-module .orders-list h5{
+  font-size: 24px;
+  color: #2C2C2C;
+}
+.order-details-module .orders-list2 {
+  display: flex;
+  align-items: center;
+}
+.order-details-module .orders-list2 select{
+  display: inline-block;
+  width: 188px;
+  height: 50px;
+  background-image: url(../imgs/Vector.png);
+  background-size: auto !important;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2E2E2D;
+  margin-left: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #707070;
+  outline: none;
+}
+.order-details-module .orders-list2 select option{
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2E2E2D;
+  text-align: center;
+}
+.order-details-module .orders-list2 .input-search{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #707070;
+  outline: none;
+  width: 399px;
+  height: 50px;
+  background-color: #fff;
+  margin-left: 29%;
+}
+.order-details-module .orders-list2 .input-search svg{
+  margin-left: 10px;
+}
+.order-details-module .orders-list2 .input-search input{
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  text-align: right;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.order-details-module .accordion-button:not(.collapsed)::after{
+  background-image: none;
+}
+.order-details-module .accordion-button::after{
+  background-image: none;
+}
+/* end order-details-module page */
+
