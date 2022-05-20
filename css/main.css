@@ -1990,6 +1990,39 @@ select  option{
 .cement-step2 .owl-nav{
   display: none;
 }
+/* last update in wallet */
+.cement-step2 .selectRoomColor .owl-carousel .owl-item .visaCard .visa-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* last update in wallet */
+.cement-step2 .selectRoomColor .owl-carousel .owl-item .visaCard .overlay{
+  position: absolute;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  background-image: linear-gradient(to right, #FF5331, #FD8F06 );
+  color: #fff;
+  height: 45%;
+  z-index: 5;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+/* last update in wallet */
+.cement-step2 .selectRoomColor .owl-carousel .owl-item .visaCard .overlay div{
+  margin-left: 5px;
+}
+/* last update in wallet */
+.cement-step2 .selectRoomColor .owl-carousel .owl-item .visaCard .overlay div h5{
+  font-size: 18px;
+  font-weight: normal;
+}
+/* last update in wallet */
+.cement-step2 .selectRoomColor .owl-carousel .owl-item .visaCard .overlay div h4{
+  font-size: 18px;
+  font-weight: normal;
+}
 .cement-step2 .selectRoomColor .owl-carousel .owl-item .visaCard{
   /* display: flex;
   -webkit-box-orient: vertical;
@@ -2169,6 +2202,13 @@ select  option{
   }
   .cement-step2 .visaCardsContainer h3{
     font-size: 25px;
+  }
+  /* last update in wallet */
+  .cement-step2 .selectRoomColor .owl-carousel .owl-item .visaCard .overlay div h5 {
+    font-size: 14px;
+  }
+  .cement-step2 .selectRoomColor .owl-carousel .owl-item .visaCard .overlay div h4 {
+    font-size: 15px;
   }
 }
 /* end cement step2 page */
