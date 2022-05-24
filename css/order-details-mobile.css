@@ -438,10 +438,35 @@ html body .main-color {
   .order-details-mobile .orders-list{
     margin-bottom: 20px;
   }
+  /* updated at 24-5-22  */
+  .order-details-mobile .orders-list2 .khamato-wallet{
+    display: none !important;
+  }
+  /* updated at 24-5-22  */
+  .order-details-mobile .list-remove{
+    display: none !important;
+  }
+  /* updated at 24-5-22  */
+  .order-details-mobile .khamato-wallet-mob{
+    display: flex !important;
+  }
+  /* updated at 24-5-22  */
+  .order-details-mobile .khamato-wallet-mob button{
+    width: 86px;
+    height: 33px;
+    font-size: 8px;
+    box-shadow: 0 4px 4px #707070;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  /* updated at 24-5-22  */
   .order-details-mobile .orders-list2 select{
     width: 86px;
     height: 33px;
-    font-size: 7px;
+    font-size: 8px;
     box-shadow: 0 4px 4px #707070;
   }
   .order-details-mobile .orders-list2 .col{

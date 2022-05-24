@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.css">
-    <!-- <link rel="stylesheet" href="../css/owl2.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl2.theme.default.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.1/magnific-popup.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>cement step 2</title>
 </head>
@@ -395,7 +394,10 @@
                             </div>
                             <div class="col-md-6">
                                 <label class="col-form-label" for="form-tel">رقم التليفون</label>
-                                <input type="tel" class="form-control" id="form-tel" placeholder="*******0">
+                                <div class="inpt-phone">
+                                    <input type="tel" class="form-control" id="form-tel" placeholder="*******0">
+                                    <a href="#popup-info" class="open-popup">تأكيد</a>
+                                </div>
                             </div>
                         </div>
                         <div class="row mt-4">
@@ -490,6 +492,21 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Popup to display -->
+        <div id="popup-info" class="mfp-hide">
+
+            <h4>
+                برجاء ادخال الرقم المرسل
+            </h4>
+
+            <input type="text">
+
+            <div>
+                <button>تأكيد</button>
+            </div>
+            
+        </div>
 
 
     </div>
@@ -498,7 +515,7 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../js/owl.carousel.min.js"></script>
-    <!-- <script src="../js/owl2.carousel.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.1/jquery.magnific-popup.js"></script>
     <script type="text/javascript">
         var data1 = 3;
         document.getElementById("counter1").innerText = data1;
@@ -587,6 +604,13 @@
                         nav:true,
                     }
                 }
+            });
+
+            // popup 
+            $('.open-popup').magnificPopup({
+            type: 'inline',
+            midClick: true,
+            mainClass: 'mfp-fade',
             });
 
 
