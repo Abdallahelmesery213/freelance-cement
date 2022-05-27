@@ -1674,6 +1674,7 @@ select  option{
 .cement-images .buttons{
   display: flex;
   align-items: center;
+  justify-content: center; /* friday updated */
 }
 .cement-images .card .section1 button{
   width: 36px;
@@ -1763,6 +1764,59 @@ select  option{
     font-size: 12px;
   }
 }
+/* friday update for iphone Screen */
+@media only screen and (max-width: 896px) {
+  .cement-images .card .card-title{
+    font-size: 14px;
+  }
+  .cement-images .card-price b {
+    font-size: 18px;
+  }
+  .cement-images .card-price div.total {
+    font-size: 18px;
+  }
+  .cement-images .card-price p {
+    font-size: 16px;
+  }
+  .cement-images .card .card-body a.add{
+    font-size: 14px;
+  }
+  .cement-step1 .nav2-content .col-md-4 select{
+    font-size: 9px;
+    text-align: right;
+  }
+  .cement-step1 .steps .special-icon {
+    width: 21px;
+    height: 20px;
+    border: 4px solid #E8E8EA;
+  }
+  .cement-step1 .nav2-content .new-icon1 img {
+    width: 60px;
+    height: 55px;
+  }
+  .cement-images .card .section1 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 0px;
+  }
+  .cement-images .card .section1 button svg{
+    width: 8px;
+    height: 8px;
+  }
+  .cement-images .card .section1 span.number {
+    font-size: 12px;
+  }
+  .cement-images .card .section1 .desc {
+    font-size: 7px;
+    line-height: 12px;
+  }
+  .cement-images .big-img{
+    height: 100%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .cement-images {
@@ -1811,6 +1865,12 @@ select  option{
     height: 405px;
     width: 100%;
     display: contents;
+  }
+  /* friday update */
+  .cement-step1 .nav2-content .col-md-4 select,
+  .cement-step1 .nav2-content select{
+    font-size: 14px;
+    text-align: right;
   }
 }
 @media only screen and (max-width: 768px) {
