@@ -1170,7 +1170,17 @@ header .searchGroup a:hover {
   font-size: 30px;
   margin: 0;
 }
-
+/* 8-25-22 update */
+.items a.more{
+  text-align: center;
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #FF5331;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
 .sup2 {
   height: auto;
 }
